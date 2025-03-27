@@ -1,12 +1,13 @@
 import gpm
-import gpm
 import datetime
+# Archivo para testear descargas de datos
+# En este caso descargar datos de GPM 2A-GPM-SLH
 
 # Specify the time period you are interested in
-start_time = datetime.datetime.strptime("2020-08-01 12:00:00", "%Y-%m-%d %H:%M:%S")
-end_time = datetime.datetime.strptime("2020-08-02 12:00:00", "%Y-%m-%d %H:%M:%S")
+start_time = datetime.datetime.strptime("2023-08-01 00:00:01", "%Y-%m-%d %H:%M:%S")
+end_time = datetime.datetime.strptime("2023-08-02 00:00:00", "%Y-%m-%d %H:%M:%S")
 # Specify the product and product type
-product = "2A-MHS-METOPB-CLIM"  # "2A-GMI-CLIM", "2A-SSMIS-F17-CLIM", ...
+product = "2A-GPM-SLH"  # 2A-PR
 product_type = "RS"
 storage = "GES_DISC"
 # Specify the version
